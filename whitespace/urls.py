@@ -16,6 +16,18 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+import whitespace.views
+
+
 urlpatterns = [
+    
+    # Test template for JAKE MY MAN
+    url(r'^jake/', whitespace.views.jake),
+    
+    
+    # User authentication URLs
+    #url(r'^')
+    
+    # Admin site 
     url(r'^admin/', admin.site.urls),
 ]
