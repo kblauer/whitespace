@@ -21,6 +21,9 @@ import whitespace.views
 
 urlpatterns = [
     
+    # Homepage
+    url(r'^$', whitespace.views.home),
+    
     # Test template for JAKE MY MAN
     url(r'^jake/', whitespace.views.jake),
     
